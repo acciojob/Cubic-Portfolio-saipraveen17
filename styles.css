@@ -3,6 +3,9 @@
   height: 100px;
   position: relative;
   transform-style: preserve-3d;
+	animation-name:slidein;
+	animation-duration:5s;
+	animation-iteration-count: infinite;
 }
 
 .face {
@@ -42,10 +45,10 @@
 }
 @keyframes slidein {
   from {
-    transform: translateX(0%);
+    transform: rotatex(0deg) rotatey(0deg) rotatex(0deg);
   }
 
   to {
-    transform: translateX(100%);
+    transform: rotatex(360deg) rotatey(360deg) rotatex(360deg);
   }
 }
