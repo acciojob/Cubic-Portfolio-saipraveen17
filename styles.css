@@ -21,27 +21,27 @@
 }
 
 .front {
-	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 492, 1);
+	transform: translateZ(50px);
 }
 
 .back {
-	transform: matrix3d(-1, 0, -1.22465e-16, 0, 0, 1, 0, 0, 1.22465e-16, 0, -1, 0, 1.83697e-14, 0, -492, 1);
+	transform: translateZ(-50px) rotateY(180deg);
 }
 
 .top {
-	transform: matrix3d(1, 0, 0, 0, 0, 6.12323e-17, 1, 0, 0, -1, 6.12323e-17, 0, 0, -492, 9.18485e-15, 1);
+	transform: rotateX(-90deg) translateZ(50px);
 }
 
 .bottom {
-	transform: matrix3d(1, 0, 0, 0, 0, 6.12323e-17, -1, 0, 0, 1, 6.12323e-17, 0, 0, 492, 9.18485e-15, 1);
+	transform: rotateX(90deg) translateZ(50px);
 }
 
 .left {
-	transform: matrix3d(6.12323e-17, 0, 1, 0, 0, 1, 0, 0, -1, 0, 6.12323e-17, 0, -492, 0, 9.18485e-15, 1);
+	transform: rotateY(-90deg) translateZ(50px);
 }
 
 .right {
-	transform: matrix3d(6.12323e-17, 0, -1, 0, 0, 1, 0, 0, 1, 0, 6.12323e-17, 0, 492, 0, 9.18485e-15, 1);
+	transform: rotateY(90deg) translateZ(50px);
 }
 @keyframes slidein {
   from {
